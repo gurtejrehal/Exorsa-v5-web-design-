@@ -1,0 +1,163 @@
+@font-face{
+ font-family: 'Dead Island';
+ src: url('../../fonts/Dead Island.ttf');
+ src: url('../../fonts/Dead Island.ttf') format(ttf);
+}
+
+@font-face{
+ font-family: 'COUTURE-Bold';
+ src: url('../../fonts/COUTURE-Bold.ttf');
+ src: url('../../fonts/COUTURE-Bold.ttf') format(ttf);
+}
+
+@import url('../../Dead Island.ttf');
+@import url('../../couture.otf');
+
+
+body{
+	background-color:#e8e9ea;
+}
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#nav {
+  height: 100px;
+  background: transparent; 
+  display: block;
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  transition: all ease .5s;
+}
+
+#logo {
+  color: #fff;
+  padding: 20px;
+  font-size: 28px;
+  transition: all ease .5s;
+}
+
+
+#nav.shrink {
+  height: 70px;
+  transition: all ease .5s;
+  background: black; // Change background to black on scroll
+}
+
+#nav.shrink #logo {
+  padding: 10px;
+  transition: all ease .5s;
+}
+
+
+.navbar-default {
+	background-color:transparent !important;
+	border-color:transparent;
+	background-image:none;
+	box-shadow:none;	
+}
+.navbar {
+    background-color: transparent;
+    background: transparent;
+    border-width: 0px;
+}
+
+.card{
+	border: 0;
+	background-color: #e8e9ea;
+	margin:0;
+	padding:0;
+	display:block;
+
+}
+#features{
+	text-align: center;
+}
+
+#features img{
+	margin: 0 35% 20px;
+}
+
+
+
+#brand {
+	transition: 2s;
+	
+}
+
+#brand:hover{
+	transform: scale(1.2);
+}
+
+#end {
+	transition: 2s;
+	
+}
+
+#end:hover{
+	transform: scale(1.2);
+}
+
+
+.jumbotron{
+	background-image: url('../../assets/career2.jpg');
+	background-size: cover;
+	height:425px;
+	margin-bottom:-5px;
+	background-attachment: fixed;
+}
+
+
+.le:hover{
+	background-color: black;
+	opacity: 0.3;
+}
+
+#new{
+	background-image: url('../../assets/second.jpg');
+}
+
+#jumbo{
+	font-family: 'Dead Island';
+	color:white;
+}
+
+footer{
+	background: #333;
+	color: #eee;
+	font-size: 11px;
+	padding: 20px;
+}
+
+ul.unstyled{
+	list-style: none;
+	padding: 0;
+}
+
+h2, h5{
+	font-family:'COUTURE-Bold';
+	letter-spacing: 4px;
+}
+#icon1, #icon2, #icon3, #icon4{
+	opacity:0;
+	transition:1s;
+}
+#icon1:hover, #icon2:hover, #icon3:hover, #icon4:hover{
+	transform:scale(1.1);
+	transition:1.5s;
+}
+#text1, #text2, #text3, #text4{
+	opacity:0;
+	transition:2.5s;
+}
+#sect2, #sect3{
+	opacity:0;
+	transition:4s;
+}

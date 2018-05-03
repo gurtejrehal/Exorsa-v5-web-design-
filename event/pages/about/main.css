@@ -1,0 +1,125 @@
+@font-face{
+ font-family: 'Dead Island';
+ src: url('../../fonts/Dead Island.ttf');
+ src: url('../../fonts/Dead Island.ttf') format(ttf);
+}
+
+@font-face{
+ font-family: 'COUTURE-Bold';
+ src: url('../../fonts/COUTURE-Bold.ttf');
+ src: url('../../fonts/COUTURE-Bold.ttf') format(ttf);
+}
+
+@font-face{
+ font-family: 'Oswald-Regular';
+ src: url('../../fonts/Oswald-Regular.ttf');
+ src: url('../../fonts/Oswald-Regular.ttf') format(ttf);
+}
+
+
+@import url('../../Dead Island.ttf');
+@import url('../../couture.otf');
+body{
+	background-color:#e8e9ea;
+}
+
+
+#nav {
+  height: 100px;
+  background: transparent; 
+  display: block;
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  transition: all ease .5s;
+}
+
+#logo {
+  color: #fff;
+  padding: 20px;
+  font-size: 28px;
+  transition: all ease .5s;
+}
+
+
+#nav.shrink {
+  height: 70px;
+  transition: all ease .5s;
+  background: black; // Change background to black on scroll
+}
+
+#nav.shrink #logo {
+  padding: 10px;
+  transition: all ease .5s;
+}
+
+
+.navbar-default {
+	background-color:transparent !important;
+	border-color:transparent;
+	background-image:none;
+	box-shadow:none;	
+}
+.navbar {
+    background-color: transparent;
+    background: transparent;
+    border-width: 0px;
+}
+
+.jumbotron{
+	background-image: url('../../assets/about1.jpg');
+	 background-repeat: no-repeat;
+	 background-size:cover;
+	 height:600px;
+	 margin:0;
+	 background-attachment:fixed;
+}
+
+#new{
+	background-image: url('../../assets/about2.jpg');
+	background-attachment: fixed;
+}
+
+#jumbo{
+	font-family: 'Dead Island';
+	color:white;
+}
+
+.card{
+	margin:0;
+	padding:0;
+	margin-left:-15px;
+	background-color:#e8e9ea;
+	display:block;
+}
+
+footer{
+	background: #333;
+	color: #eee;
+	font-size: 11px;
+	padding: 20px;
+}
+
+ul.unstyled{
+	list-style: none;
+	padding: 0;
+}
+
+.form-group{
+	margin:20px;
+}
+
+
+#brand{
+	overflow:hidden;
+	transition:1.5s;
+}
+#brand:hover{
+	transform:scale(1.2);
+}
+
+#animate{
+	opacity:0;
+	transition:1.5s;
+}
+

@@ -1,0 +1,137 @@
+@font-face{
+ font-family: 'Dead Island';
+ src: url('../../fonts/Dead Island.ttf');
+ src: url('../../fonts/Dead Island.ttf') format(ttf);
+}
+
+@font-face{
+ font-family: 'Oswald-Regular';
+ src: url('../../fonts/Oswald-Regular.ttf');
+ src: url('../../fonts/Oswald-Regular.ttf') format(ttf);
+}
+
+
+@import url('../../Dead Island.ttf');
+@import url('../../couture.otf');
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+body{
+	background-color:#e8e9ea;
+}
+
+
+#nav {
+  height: 100px;
+  background: transparent; 
+  display: block;
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  transition: all ease .5s;
+}
+
+#logo {
+  color: #fff;
+  padding: 20px;
+  font-size: 28px;
+  transition: all ease .5s;
+}
+
+
+#nav.shrink {
+  height: 70px;
+  transition: all ease .5s;
+  background: black; // Change background to black on scroll
+}
+
+#nav.shrink #logo {
+  padding: 10px;
+  transition: all ease .5s;
+}
+
+
+.navbar-default {
+	background-color:transparent !important;
+	border-color:transparent;
+	background-image:none;
+	box-shadow:none;	
+}
+.navbar {
+    background-color: transparent;
+    background: transparent;
+    border-width: 0px;
+}
+
+
+.intro {
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	background: url("../../assets/thank.jpg") no-repeat 50% 50%;
+	display: table;
+	top: 0;
+	background-size: cover;
+}
+
+.intro .inner {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	max-width: none;
+}
+
+.con{
+	max-width: 500px;
+	margin: 0 auto;
+	text-align: center;
+	
+}
+
+.con h1{
+	font-family: 'Dead Island';
+	color: white;
+	text-shadow:  0px 0px 300px #000;
+	font-size: 700%;
+	
+}
+
+
+.btn{
+	border-radius: 9px;
+	font-family: 'Oswald-Regular';
+	font-size: 135%;
+	padding: 10px 20px;
+	border: solid white 3px;
+	text-transform: uppercase;
+	text-decoration: none;
+	
+}
+
+a{
+	color: #dfe0c7;
+}
+.btn:hover {
+	color: #fff;
+	border: solid #fff 3px;
+}
+
+.info{
+	color: white;
+    box-shadow: 1px 1px 2px black, 0 0 25px #ffbf65, 0 0 5px #ffbf65;
+}
+
+@media screen and (max-width: 720px) {
+	.con h1{
+		font-size: 250%;
+	}
+	
+	.btn{
+		font-size: 110%;
+		padding: 7px 15px;
+	}
+}
